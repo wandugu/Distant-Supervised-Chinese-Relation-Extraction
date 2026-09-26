@@ -3,3 +3,7 @@ kg_data/processed/
 kg_data/baike_triples.txt
 kg_data/baiketriples.zip
 kg_data/.ipynb_checkpoints/
+/data/chinese.rar
+/data/chinese/test.json
+/data/chinese/train.json
+/data/chinese/word_vec.json
