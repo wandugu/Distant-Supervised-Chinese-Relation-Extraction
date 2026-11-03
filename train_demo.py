@@ -8,6 +8,8 @@ dataset_name = 'nyt'
 if len(sys.argv) > 1:
     dataset_name = sys.argv[1]
 dataset_dir = os.path.join('./data', dataset_name)
+if dataset_name == 'chinese' and 'DATASET_ROOT' in os.environ and not os.path.exists(os.path.join(dataset_dir, 'train.json')):
+    dataset_dir = os.path.join(os.environ['DATASET_ROOT'], 'cndbpedia_re')
 if not os.path.isdir(dataset_dir):
     raise Exception("[ERROR] Dataset dir %s doesn't exist!" % (dataset_dir))
 
